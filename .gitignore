@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+*.so
+.Python
+env/
+venv/
+ENV/
+ENV.bak/
+lib/
+lib64/
+include/
+share/
+bin/
+pip-wheel-metadata/
+
+# Conda environments (if created inside project, though typically not)
+# If your 'chatterbox-env' or 'chatterbox-test-distro' were somehow created
+# inside 'resemble-ai/', you'd list them here. But they are usually global.
+# chatterbox-env/
+# chatterbox-test-distro/
+
+# Large Model Files (Users download these separately)
+# IMPORTANT: If gguf-connector downloads into ./models/ AND you don't want
+# to commit potentially large model files accidentally.
+# If ./models/ is ONLY a placeholder for users, it can be empty and committed.
+# If models are automatically downloaded INTO ./models/, then add this:
+models/*.gguf
+models/*.bin 
+# Or more generally if the models folder can contain other large files:
+# models/*
+# !models/.gitkeep # (If you want to keep the 'models' folder structure but not its content)
+
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Distribution files (if you build zips locally)
+*.zip
+*.tar.gz
+
+# Sensitive information (if any, though unlikely for this project)
+# .env
+# secrets.txt
+
+# Output files from your batch scripts if they generate logs locally
+# *.log (be specific if you have logs you DO want to commit)
